@@ -20,10 +20,6 @@
             justify-content: center;
             background: linear-gradient(to bottom, #2e8b57, #c0392b); /* Green to Red gradient */
             color: #ffffff;
-            background-image: url('https://cdn.pixabay.com/photo/2016/12/23/00/16/christmas-1921747_960_720.jpg'); /* Example Christmas Tree Image */
-            background-position: center center;
-            background-size: cover;
-            background-attachment: fixed;
         }
         .container {
             max-width: 800px;
@@ -48,6 +44,13 @@
             font-style: italic;
             margin: 20px 0;
             color: #555555;
+            background: #ffffff;
+            padding: 20px;
+            border-left: 10px solid #c0392b; /* Red border for blockquote */
+            border-radius: 10px;
+        }
+        blockquote p {
+            margin-bottom: 20px;
         }
         .snowflake {
             font-size: 3em;
@@ -64,6 +67,7 @@
     <div class="container">
         <div class="snowflake">❄</div>
         <h1>God Jul!</h1>
+        <p>Här kommer en liten julhälsning:</p>
         <blockquote>
             <p>
                 När snön faller och ljusen brinner, <br>
@@ -74,7 +78,7 @@
             <p>
                 God Jul <br>
                 Önskar <br>
-                Sebastian & Tobias
+                <br> Sebastian & Tobias
             </p>
         </blockquote>
     </div>
