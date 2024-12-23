@@ -5,39 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julrim</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f9f4;
-            color: #2e4057;
-            text-align: center;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #c0392b, #f4f9f4);
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .container {
-            margin: 50px auto;
+            max-width: 800px;
             padding: 20px;
-            max-width: 600px;
-            background-color: #ffffff;
-            border: 5px solid #c0392b;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #2e4057;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
         }
         h1 {
+            font-size: 3em;
             color: #c0392b;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+        blockquote {
+            font-size: 1.2em;
+            font-style: italic;
+            margin: 20px 0;
+            color: #555555;
         }
         .snowflake {
-            font-size: 50px;
-            animation: float 3s infinite linear;
+            font-size: 3em;
+            animation: float 3s infinite ease-in-out;
         }
         @keyframes float {
             0% { transform: translateY(0); }
             50% { transform: translateY(10px); }
             100% { transform: translateY(0); }
-        }
-        footer {
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #7f8c8d;
         }
     </style>
 </head>
@@ -53,9 +68,6 @@
                 God Jul till dig, vår kära skatt!
             </p>
         </blockquote>
-        <footer>
-            <p>&copy; 2024 Julrim Creator</p>
-        </footer>
     </div>
 </body>
 </html>
