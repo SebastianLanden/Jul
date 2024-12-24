@@ -22,6 +22,7 @@
             color: #ffffff;
         }
         .container {
+            width: 100%;
             max-width: 800px;
             padding: 20px;
             background-color: #cccccc; /* Grey background for entire container */
@@ -29,14 +30,15 @@
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             text-align: center;
+            box-sizing: border-box;
         }
         h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             color: #c0392b;
             margin-bottom: 20px;
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.2em;
             line-height: 1.5;
         }
         blockquote {
@@ -60,6 +62,39 @@
             0% { transform: translateY(0); }
             50% { transform: translateY(10px); }
             100% { transform: translateY(0); }
+        }
+
+        /* Media Queries for better responsiveness */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Smaller title on mobile */
+            }
+            p {
+                font-size: 1.1em; /* Smaller paragraph text on mobile */
+            }
+            blockquote {
+                font-size: 1em; /* Smaller blockquote text */
+                padding: 15px;
+            }
+            .snowflake {
+                font-size: 2em; /* Smaller snowflake */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 1.8em; /* Even smaller title for very small screens */
+            }
+            p {
+                font-size: 1em; /* Smaller paragraph text */
+            }
+            blockquote {
+                font-size: 0.9em; /* Smaller blockquote text */
+                padding: 10px;
+            }
+            .snowflake {
+                font-size: 1.5em; /* Even smaller snowflake */
+            }
         }
     </style>
 </head>
